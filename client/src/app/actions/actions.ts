@@ -202,6 +202,7 @@ export async function getResourceBalance(resourceAddress: string, nHash: string)
   return balance;
 }
 
+
 export async function consumeResource(resourceAddress: string, nHash: string) {
   const provider = new RpcProvider({ nodeUrl: constants.NetworkName.SN_SEPOLIA });
   const ethSigner = getEthSigner(nHash);

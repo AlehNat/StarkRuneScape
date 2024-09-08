@@ -292,14 +292,14 @@ export default function Home() {
             </div>
           )}
         </div>
-        {nullifierHash && accountAddress && (
-          <div className="hidden">
-            {setTimeout(() => {
-              const element = document.querySelector('.flex.flex-col.items-center.justify-center.min-h-\\[200px\\].bg-gray-800.rounded-lg.p-4.mb-8');
-              if (element) element.remove();
-            }, 1000)}
-          </div>
-        )}
+        {/* {nullifierHash && accountAddress && (
+          // <div className="hidden">
+          //   {setTimeout(() => {
+          //     const element = document.querySelector('.flex.flex-col.items-center.justify-center.min-h-\\[200px\\].bg-gray-800.rounded-lg.p-4.mb-8');
+          //     if (element) element.remove();
+          //   }, 1000)}
+          // </div>
+        )} */}
 
         {/* Updated Tree Cutting UI */}
         {accountAddress && (
