@@ -23,6 +23,7 @@ export default function Home() {
   const [fishBalance, setFishBalance] = useState<string | null>(null);
   const [cookedFishBalance, setCookedFishBalance] = useState<string | null>(null);
 
+
   const woodAddress = '0x05c911152dbfc068e93892fd795f51b4c0fc437f4ea93d5d913edb892fb2cb01';
   const stickAddress = "0x20d5f0fe4166124218dc5cd4624cbec3adafdd55909ab4fca9ba5374f56b031";
   const fishAddress = "0x34fced2cfc380b72ef04f51253023259fd805cd428edda73866aaef6ab0904c";
@@ -32,7 +33,7 @@ export default function Home() {
     if (nullifierHash) {
       const woodBalance = await getResourceBalance(woodAddress, nullifierHash);
       setWoodBalance(woodBalance.toString());
-      
+
       const stickBalance = await getResourceBalance(stickAddress, nullifierHash);
       setStickBalance(stickBalance.toString());
 
@@ -307,8 +308,8 @@ export default function Home() {
             {/* Tree cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               {treeTypes.map((tree, index) => (
-                <div 
-                  key={index} 
+                <div
+                  key={index}
                   className={`
                     bg-gray-800 p-4 rounded-lg text-white cursor-pointer
                     transition-colors duration-300 ease-in-out
@@ -325,7 +326,7 @@ export default function Home() {
                     {index === 0 ? 'Cut' : index === 1 ? 'Craft' : index === 2 ? 'Catch' : 'Cook'} {tree.name}
                   </h3>
                   <p>{tree.xp} Skill XP / {tree.time} seconds</p>
-                  <motion.div 
+                  <motion.div
                     className="text-4xl my-2"
                     animate={isProducing && activeTree === index ? pulseAnimation : {}}
                   >
