@@ -23,6 +23,7 @@ export default function Home() {
   const [fishBalance, setFishBalance] = useState<string | null>(null);
   const [cookedFishBalance, setCookedFishBalance] = useState<string | null>(null);
 
+
   const woodAddress = '0x05c911152dbfc068e93892fd795f51b4c0fc437f4ea93d5d913edb892fb2cb01';
   const stickAddress = "0x20d5f0fe4166124218dc5cd4624cbec3adafdd55909ab4fca9ba5374f56b031";
   const fishAddress = "0x34fced2cfc380b72ef04f51253023259fd805cd428edda73866aaef6ab0904c";
