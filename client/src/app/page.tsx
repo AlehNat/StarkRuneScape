@@ -29,6 +29,7 @@ export default function Home() {
   const fishAddress = "0x34fced2cfc380b72ef04f51253023259fd805cd428edda73866aaef6ab0904c";
   const cookedFishAddress = "0x21d87189985671ca4b9979d782681b90ab69fe29381eec262a0adf9dcf4010b";
 
+
   const fetchResources = async () => {
     if (nullifierHash) {
       const woodBalance = await getResourceBalance(woodAddress, nullifierHash);
